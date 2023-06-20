@@ -1,0 +1,25 @@
+.dataview {
+  display: flex;
+  gap: 4;
+}
+
+.user-data {
+  display: flex;
+  // gap: 12px;
+  width: 40rem;
+  margin-bottom: 4px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.userform {
+  display: flex;
+  width: 40rem;
+  flex-direction: column;
+}
+
+.inputbox {
+  margin-bottom: 12px;
+}

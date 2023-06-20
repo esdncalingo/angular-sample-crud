@@ -1,0 +1,40 @@
+<div>
+  This is Dataview Component
+</div>
+
+<div class="userform">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name"  class="inputbox">
+
+  <label for="email">Email</label>
+  <input type="text" name="email" id="email"  class="inputbox">
+
+  <label for="phone">Phone</label>
+  <input type="text" name="phone" id="phone"  class="inputbox">
+
+  <label for="address">Address</label>
+  <input type="text" name="address" id="address"  class="inputbox">
+
+  <button>Add</button>
+</div>
+
+<!-- User table -->
+<div class="user-data">
+  <span class="user-info">Name</span>
+  <span class="user-info">Email</span>
+  <span class="user-info">Phone Number</span>
+  <span class="user-info">Address</span>
+  <span class="user-info">Action</span>
+</div>
+<div *ngFor="let user of users" class="dataview">
+  <div class="user-data">
+    <span class="user-info">{{ user.name }}</span>
+    <span class="user-info">{{ user.email }}</span>
+    <span class="user-info">{{ user.phone }}</span>
+    <span class="user-info">{{ user.address }}</span>
+    <span class="user-info">
+      <button>Edit</button>
+      <button>Delete</button>
+    </span>
+  </div>
+</div>
