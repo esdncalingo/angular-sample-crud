@@ -38,6 +38,12 @@ export class DataViewComponent {
       const data = await createUsers(this.myForm.value)
       console.log(data)
       this.users.push(this.myForm.value)
+      this.myForm.patchValue({
+        name: '',
+        email: '',
+        phone: '',
+        address: ''
+      })
     } catch (error) {
       console.log(error)
     }

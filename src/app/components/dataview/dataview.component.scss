@@ -1,17 +1,63 @@
+.btn-primary {
+  background-color: #1877F2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0F65D9;
+}
+
+.btn-del {
+  @extend .btn-primary;
+  background-color: #ee232d;
+}
+
+.btn-edit {
+  @extend .btn-primary;
+  background-color: #278324;
+}
+
+.btn-update {
+  @extend .btn-primary;
+  background-color: #3b75e2;
+}
+
 .dataview {
   display: flex;
   gap: 4;
 }
 
+.action-col {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 4px;
+}
+
 .user-data {
   display: flex;
   // gap: 12px;
-  width: 50rem;
+  width: 60rem;
   margin-bottom: 4px;
+  padding: 4px;
 }
 
 .user-info {
   flex: 1;
+}
+
+.user-th {
+  flex: 1;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background-color: darkslategray;
+  color: azure;
 }
 
 .userform {
@@ -22,5 +68,6 @@
 }
 
 .inputbox {
+  padding: 8px;
   margin-bottom: 12px;
 }
